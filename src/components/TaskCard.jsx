@@ -13,18 +13,18 @@ const TaskCard = () => {
     return (
 
         tasks && (
-            <div className="w-xl mt-5 p-4 rounded-lg shadow-md bg-gray-100">
+            <div className="task-card w-xl mt-5 p-4 rounded-lg shadow-lg">
                 <h2 className="text-xl font-bold mb-3 text-center">Task List</h2>
                 <ul className="list-none pl-5 w-full">
                     {tasks.map((task) => (
-                        <div key={task.id} className="flex bg-white px-4 py-1 mb-2 rounded shadow-sm ">
-                            <li className="font-bold">
+                        <div key={task.id} className="tasks flex bg-white px-4 py-1 mb-2 rounded shadow-sm ">
+                            <li className="task font-bold">
                                 {task.text}
                             </li>
                             <div className="ml-auto">
                                 <button
                                     onClick={() => deleteTaskHandler(task.id)}
-                                    className="px-2 py-1 cursor-pointer bg-red-500 text-white rounded hover:bg-red-600">
+                                    className="deleteBtn px-2 py-1 cursor-pointer bg-red-500 text-white rounded hover:bg-red-600">
                                     Delete
                                 </button>
                             </div>

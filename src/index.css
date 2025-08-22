@@ -1,1 +1,47 @@
 @import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .dark {
+        @apply bg-gray-900;
+    }
+
+    .dark h1,
+    .dark h2,
+    .dark h3,
+    .dark p {
+        @apply text-white;
+    }
+
+    .dark .addTask {
+        @apply bg-gray-800 text-white;
+    }
+
+    .dark input {
+        @apply bg-gray-700 text-gray-700 placeholder-gray-700;
+    }
+
+    div.dark button.add-btn {
+        @apply bg-gray-600 !important;
+    }
+}
+
+@layer components {
+    .dark .task-card {
+        @apply bg-gray-800 text-white;
+    }
+
+    .dark .tasks {
+        @apply bg-gray-700;
+    }
+
+    .dark .task {
+        @apply text-gray-700;
+    }
+
+    .dark .deleteBtn {
+        @apply bg-gray-600 text-white hover:bg-gray-700 transition-colors duration-200 !important;
+    }
+}
