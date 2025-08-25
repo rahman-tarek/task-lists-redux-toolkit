@@ -24,7 +24,7 @@
     }
 
     div.dark button.add-btn {
-        @apply bg-gray-600 !important;
+        @apply bg-gray-600;
     }
 }
 
@@ -42,6 +42,6 @@
     }
 
     .dark .deleteBtn {
-        @apply bg-gray-600 text-white hover:bg-gray-700 transition-colors duration-200 !important;
+        @apply bg-gray-600 text-white hover:bg-gray-700 transition-colors duration-200;
     }
 }
